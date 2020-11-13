@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font: 10px Roboto, arial,sans-serif;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: #181818;
+}
+
+h1{
+    font: 20px Roboto, arial,sans-serif;
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.linha{
+    margin-top: 60px;
+    margin-left: 31px;
+    width: 1129px;
+    height: 4px;
+    background-color:#333333;
+    display: flex;;
+}
+
+#container{
+    margin: 0;
+}
+
+#toolbar{
+    background-color: rgba(33,33,33,0.98);
+    width: 100%;
+    height: 56px;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    padding: 0px 16px;
+    opacity: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+#navbar{
+    background-color:rgba(33,33,33,0.98);
+    float: left;
+    width: 73px;
+    height: 1000px;
+    position: fixed;
+    margin-top: -24px;
+    color: #ffffff;
+    display: flex;
+    padding-top: 56px;
+    opacity: 50px;
+}
+
+#central{
+    width: 100%;
+    color: white;
+    margin: 0;
+    display: fixed;
+    padding-left: 73px;
+    padding-top: 56px;
+}
+
+
+/* Lado esquerdo */
+
+
+.botoes-canto-esquerdo{
+    display: flex;
+}
+
+.botao-menu-lateral{
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+.botao-menu{
+    margin: 0px 16px 0px 0px;
+    padding: 8px;
+}
+
+.logoYoutube{
+    background: transparent;
+    border: 0;
+    outline: none;
+    width: 80px;
+    height: 24px;
+    margin-top: 8px
+}
+
+.span-br{
+    color: #aaa;
+    margin: 0 1px;
+    line-height: 24px;
+    vertical-align: top;
+}
+
+/* Centro da toolbar */
+
+.conteudo-central-toolbar{
+    display: flex;
+    align-content: center;
+}
+
+/* Barra de Pesquisa */
+.barra-pesquisa{
+    background-color: #121212;
+    width: 560px;
+    height: 30px;
+    border: solid 1px rgb(51, 50, 50); 
+    outline: none;
+    color: #fff;
+    font: 16px Roboto, arial,sans-serif;
+    line-height: 30;
+}
+
+.botao-pesquisar{
+    padding: 1px 6px;
+    width: 65px;
+    height: 30px;
+    background-color: #FFFFFF14;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+}
+
+.botao-pesquisar img{
+    width: 20px;
+    height: 20px;
+    margin: 16px;
+}
+
+.botao-pesquisar img:hover{
+    background: #fff;
+}
+
+::-webkit-input-placeholder{
+    font-family: 'Roboto','Noto',sans-serif;
+    font-size: 15px;
+    padding-left: 6px;  
+}
+
+.search{
+    position: relative;
+}
+
+.search img{
+    position:absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search input {
+    padding-right: 51px;
+    padding-left: 8px;
+}
+
+/* Lado direito */
+.botoes-canto-direito{
+    display: flex;
+    margin-right: 10px;
+}
+
+.botao-criar{
+    width: 41px;
+    height: 41px;
+    background: transparent;
+    outline: none;
+    border: 0;
+    display: block;
+    padding: 8px;
+}
+
+.botao-app{
+    width: 41px;
+    height: 41px;
+    background: transparent;
+    outline: none;
+    border: 0;
+    padding: 8px;
+}
+
+.botao-notificacoes{
+    width: 41px;
+    height: 41px;
+    background: transparent;
+    outline: none;
+    border: 0;
+    padding: 8px;
+}
+
+.img-perfil{
+    padding: 8px;
+}
+
+/* Menu lateral */
+
+.itens-menu-lateral{
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Deixou tudo alinhado */
+    margin-top: 24px;
+}
+
+.botoes-menu-lateral{
+    width: 72px;
+    height: 74px;
+    padding: 20px 0px 14px;
+}
+
+
+/* DIV central */
+
+#videos-musica{
+    padding-left: 24px;
+    margin-right: none;
+    margin-top: 24px;
+}
+
+.video{
+    margin: 0px 8px 40px;
+    width: 319px;
+    height: 273px;
+    display: inline;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-bottom: 24px;
+}
+
+.videos{
+    width: 260px;
+    height: 145px;
+}
+
+
+/* Info dos vídeos */
+
+.info-videos{
+    width: 260px;
+    height: 94px;
+    padding-right: 24px;
+    margin-right: none;
+}
+
