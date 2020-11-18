@@ -5,16 +5,18 @@
 <head>
     <title> YouTube </title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/logo-botao.png">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <section id="container">
         <header id="toolbar">
-            <div class="botoes-canto-esquerdo">
+
+            <label class="botoes-canto-esquerdo">
                 <div class="botao-menu">
-                    <button class="botao-menu-lateral">
+                    <button type="button" class="menu" onclick="batata()">
                         <img src="./svg/botao-abrir-menu.svg">
                     </button>
                 </div>
@@ -26,23 +28,25 @@
                         BR
                     </span>
                 </div>
-            </div>
+            </label>
+            
+
             <div class="conteudo-central-toolbar">
                 <div class="search">
-                    <input type="text" placeholder="Pesquisar" class="barra-pesquisa" autocomplete="on">
+                    <input type="text" placeholder="Pesquisar" class="barra-pesquisa">
                     <img src="./img/image.png">
                 </div>
-                <button  type="submit" class="botao-pesquisar">
+                <button type="submit" class="botao-pesquisar">
                     <img src="./svg/botao-lupa.svg">
                 </button>
             </div>
+
+
             <div class="botoes-canto-direito">
                 <div>
-                    <a href="aspira.html">
-                        <button class="botao-criar">
+                    <button class="botao-criar">
                         <img src="./svg/botao-criar.svg">
-                        </button>
-                    </a>    
+                    </button>
                 </div>
                 <div>
                     <button class="botao-app">
@@ -58,8 +62,83 @@
                     <img src="./img/perfil.png" width="24px">
                 </div>
             </div>
+
         </header>
         <aside>
+            <nav class="menu-list">
+                <label class="open-botoes-canto-esquerdo">
+                    <div class="open-botao-menu">
+                        <button type="button" class="open-menu" onclick="batata()">
+                            <img src="./svg/botao-abrir-menu.svg">
+                        </button>
+                    </div>
+                    <div class="open-logo">
+                        <button class="open-logoYoutube">
+                            <img src="./svg/logo.svg">
+                        </button>
+                        <span class="open-span-br">
+                            BR
+                        </span>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Em alta</a></li>
+                    <li><a href="">Inscrições</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="">Biblioteca</a></li>
+                    <li><a href="">Histórico</a></li>
+                    <li><a href="">Seus vídeos</a></li>
+                    <li><a href="">Seus filmes</a></li>
+                    <li><a href="">Assistir mais tarde</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="">INSCRIÇÕES</a></li>
+                    <li><a href="">Apple</a></li>
+                    <li><a href="">Cursp em Vídeo</a></li>
+                    <li><a href="">Ballislife</a></li>
+                    <li><a href="">Chicco Mattos</a></li>
+                    <li><a href="">Coisa de Nerd</a></li>
+                    <li><a href="">Desimpedidos</a></li>
+                    <li><a href="">ESPN</a></li>
+                    <li><a href="">Inutilismo</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="">MAIS DO YOUTUBE</a></li>
+                    <li><a href="">YouTube Premium</a></li>
+                    <li><a href="">Filmes</a></li>
+                    <li><a href="">Jogos</a></li>
+                    <li><a href="">Ao vivo</a></li>
+                    <li><a href="">Aprender</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="">Configurações</a></li>
+                    <li><a href="">Histórico de denúncias</a></li>
+                    <li><a href="">Ajuda</a></li>
+                    <li><a href="">Enivar feedback</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="">Sobre Imprensa</a></li>
+                    <li><a href="">Direitos Autorais</a></li>
+                    <li><a href="">Entre em contato</a></li>
+                    <li><a href="">Criadores de conteúdo</a></li>
+                    <li><a href="">Publicidade Desenvolvedores</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="">Termos Privacidade</a></li>
+                    <li><a href="">Política e Segurança</a></li>
+                    <li><a href="">Como funciona o Youtube</a></li>
+                    <li><a href="">Testar os novos recursos</a></li>
+                </ul>
+            </nav>
+
             <nav id="navbar">
                 <div class="itens-menu-lateral">
                     <div class="botoes-menu-lateral">
@@ -80,147 +159,589 @@
                     </div>
                 </div>
             </nav>
+
+            
+
         </aside>
         <div id="central">
-
-            <div id="videos-musica">
+            <div id="secao-de-videos">
                 <div class="video">
-                    <img class="videos" src="https://lh5.googleusercontent.com/proxy/OgUOJTi9QMYU1abrYDWUojNP7t51UNNY2oroici-xD0VAoMpLJmMi0D0nr3YWajTRl1ckBLO2DeKG6f8OeLPquGf0HJNqaut2LGYhLq6U6St70do6tWaaPxTj67a1T9YvO_KDer-V8Le=w1152-h603-s-nd"
-                        width="319" height="179">
+                    <img class=" videos"
+                        src="https://i.ytimg.com/vi/KIu_QKH-dTg/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLB0IyJiBKsia_L1ZlJsDpKo_2BfUA"
+                        width="500" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GgfiaDdEp_BCghUDdLB9GsDTxlVRcw3UtLTxQ=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                INTERFACE PS5 - Tour pela Dashboard do Playstation 5
+                            </label>
+                            <label class="descricao-video">
+                                BRKsEDU
+                            </label>
+                            <label class="descricao-video">
+                                12 mil visualizações - há 30 minutos
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/tz1n6Is6Cp4/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAHYSuQMSUbZzcTe6G4qvCAR1glkQ"
-                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=tz1n6Is6Cp4 -->
-                       <!--  <div class="textos">
-                            <div class="titulo-video">
-                                BANCA DE PIADAS - CANCELAMENTO - #15 
-                            </div>
-                            <div class="texto-video">
-    
-                            </div>
-                        </div> -->
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/tz1n6Is6Cp4/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAHYSuQMSUbZzcTe6G4qvCAR1glkQ"
+                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=tz1n6Is6Cp4 --><br>
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GjNtshVpLkS6XwUxL0J39hflUVBrQa_k9C6Bw=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                BANCA DE PIADAS - CANCELAMENTO - #15
+                            </label>
+                            <label class="descricao-video">
+                                4 AMIGOS STAND UP COMEDY
+                            </label>
+                            <label class="descricao-video">
+                                1,1 mi de visualizações - há 3 meses
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/GzIUTUD631E/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCcFVbVnIR7cN5kLVnkJ3-3gk502w"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/GzIUTUD631E/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCcFVbVnIR7cN5kLVnkJ3-3gk502w"
                         width="319" height="179"> <!-- https://www.youtube.com/watch?v=GzIUTUD631E -->
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a/AATXAJy3TVIzJnXXXVQD3Dpa8wOENhN9zG0gBItKISVdMw=s48-c-k-c0xffffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Conseguimos fazer um ESPELHO QUE NÃO INVERTE
+                            </label>
+                            <label class="descricao-video">
+                                Manual do Mundo
+                            </label>
+                            <label class="descricao-video">
+                                770 mil visualizações - há 1 meses
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/ipyVLsBSiBE/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAmRGZcAVTrjd-02k7i1LcitsCghQ"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/0ASKjXd8oEI/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBghWyKNwokMhvjen-ANgfBnD9x4w"
                         width="319" height="179"> <!-- https://www.youtube.com/watch?v=ipyVLsBSiBE -->
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GgE6j6demZwg_uiDQss2xaqGYcxqw3K-NactA=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                GALAXY S10, S10+ e S10E!
+                            </label>
+                            <label class="descricao-video">
+                                Coisa de Nerd
+                            </label>
+                            <label class="descricao-video">
+                                2,5 mi de visualizações - há 1 ano
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/yimeXZ1twWs/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBwGApbyTmhNgQuJYKGDc7NShrNHQ"
-                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=yimeXZ1twWs -->
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/_6WgZpvT5Pw/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCwdM4A9B9us5PA-CvpaHnLivpXdw"
+                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=_6WgZpvT5Pw -->
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14Giwx89k_F2S_rynF43Uf-SluomcyMpTPzNkXQ=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                IPHONE 12 MINI: HANDS ON!
+                            </label>
+                            <label class="descricao-video">
+                                Loop Infinito
+                            </label>
+                            <label class="descricao-video">
+                                47 mil visualizações - há 17 horas
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/xuCfHG4GOAw/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAX34eboDotEnqZ3E1xxeCzmq7aXg"
-                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=xuCfHG4GOAw -->
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/lQjT6VhGpBs/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAt_zM3d1oAxGya4L-E9e0SZTAU2Q"
+                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=lQjT6VhGpBs-->
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GhqOT2rmcUlS-pOBQeg8m4GCYTXT87VKNoyyg=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Best WideScreen Monitor For Programming - LG 34WN750
+                            </label>
+                            <label class="descricao-video">
+                                Dev Ed
+                            </label>
+                            <label class="descricao-video">
+                                180 mil visualizações - há 2 meses
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/rKzmhgdlNX8/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCRxVtxSew91ZdwVPFl7ekRSX3oaA"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/rKzmhgdlNX8/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCRxVtxSew91ZdwVPFl7ekRSX3oaA"
                         width="319" height="179"> <!-- https://www.youtube.com/watch?v=rKzmhgdlNX8 -->
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GgE6j6demZwg_uiDQss2xaqGYcxqw3K-NactA=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Xbox Series X e Xbox Series S - Review
+                            </label>
+                            <label class="descricao-video">
+                                Coisa de Nerd
+                            </label>
+                            <label class="descricao-video">
+                                2,5 mi de visualizações - há 1 ano
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/0SaTHHj0PVg/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAXfd8n-rrkuc7Cukd1QxNKlSw8HA"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/0SaTHHj0PVg/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAXfd8n-rrkuc7Cukd1QxNKlSw8HA"
                         width="319" height="179"> <!-- https://www.youtube.com/watch?v=0SaTHHj0PVg -->
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GgtUUZEANRxLC19dyLgS4srIL-Q7mLeyVOmAQ=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                THIAGO VENTURA - XUXA MÃE DA XAXA
+                            </label>
+                            <label class="descricao-video">
+                                Thiago Ventura
+                            </label>
+                            <label class="descricao-video">
+                                3,6 mi de visualizações - há 8 meses
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="linha"></div>
-            <div id="videos-musica">
+            <div id="secao-de-videos">
                 <h1> Cursos </h1>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/Ptbk2af68e8/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCXN0qo9SUWbunCMsr4tLT3xM2K7w"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/Ptbk2af68e8/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCXN0qo9SUWbunCMsr4tLT3xM2K7w"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GhgeYyRM3IVJg19ULx41nK1fiZmcseIOGZf7Q=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                O que o JavaScript é capaz de fazer? - Curso JavaScript #01
+                            </label>
+                            <label class="descricao-video">
+                                Curso em Vídeo
+                            </label>
+                            <label class="descricao-video">
+                                690 mil visualizações - há 1 ano
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/t-EMinSz_Tk/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAJrfWWJnbUcbFXf7sKEKJ5gRBLDQ"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/t-EMinSz_Tk/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAJrfWWJnbUcbFXf7sKEKJ5gRBLDQ"
                         width="319" height="179"> <!-- https://www.youtube.com/watch?v=t-EMinSz_Tk -->
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a/AATXAJz0IxBCRthqIt_FvxXATc_fj1kaKJGwEQjloCFz9g=s48-c-k-c0xffffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Responsive Animated Login Form Using HTML & CSS & JavaScript (2020)
+                            </label>
+                            <label class="descricao-video">
+                                True Coder
+                            </label>
+                            <label class="descricao-video">
+                                530 mil visualizações - há 2 meses
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/P8LxrpNQrTU/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCQ69zhcWLvo3vgNynHHO4JDFIKkw"
-                        width="319" height="179"> 
-                </div>
-                <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/GTMEuHxh8aQ/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBQxrgzGFO3qGLIq0Er91mFFrBQKg"
-                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=GTMEuHxh8aQ-->
-                </div>
-                <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/H4MkGzoACpQ/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDuZy8gP6_VWgzvEgbOuvixfWMglA"
-                        width="319" height="179">  <!-- https://www.youtube.com/watch?v=UftSB4DaRU4 --> 
-                </div>
-                <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/UftSB4DaRU4/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLB5Q-eQ_KjRF9UAhICvGeNdfINHFw"
-                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=H4MkGzoACpQ -->
-                </div>
-                <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/eKi3UlBZEXI/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBl6AXR1eFATgi3evw0Gp_Zlq_gcA"
-                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=eKi3UlBZEXI --> 
-                </div>
-                <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/8rkuukKA8a4/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCHzPV_hY0gu_aqjRDBAP0qnUBsmg"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/P8LxrpNQrTU/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCQ69zhcWLvo3vgNynHHO4JDFIKkw"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GhgeYyRM3IVJg19ULx41nK1fiZmcseIOGZf7Q=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Curso de HTML5 + CSS3 + JS atualizado em 2020
+                            </label>
+                            <label class="descricao-video">
+                                Curso em Vídeo
+                            </label>
+                            <label class="descricao-video">
+                                530 mil visualizações - há 2 meses
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/GTMEuHxh8aQ/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBQxrgzGFO3qGLIq0Er91mFFrBQKg"
+                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=GTMEuHxh8aQ-->
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GgbOmDuYedIuzTFdGU9vGA1AwQsr2Cp8GJ_Hg=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Validação de forms customizada com HTML e JavaScript | Code/Drops #32
+                            </label>
+                            <label class="descricao-video">
+                                Rocketseat
+                            </label>
+                            <label class="descricao-video">
+                                20 mil visualizações - há 5 meses
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/H4MkGzoACpQ/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDuZy8gP6_VWgzvEgbOuvixfWMglA"
+                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=H4MkGzoACpQ&t=90s -->
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a/AATXAJzj9Wp5NIzuIcB3DhQ5jgunW5b98DCWGeSv2TZptQ=s176-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Animated Responsive Navbar Tutorial
+                            </label>
+                            <label class="descricao-video">
+                                Dev Ed
+                            </label>
+                            <label class="descricao-video">
+                                655 mil visualizações - há 1 ano
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/UftSB4DaRU4/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLB5Q-eQ_KjRF9UAhICvGeNdfINHFw"
+                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=H4MkGzoACpQ -->
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GgbOmDuYedIuzTFdGU9vGA1AwQsr2Cp8GJ_Hg=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Manipulação de DOM com JavaScript, do zero, na prática | Masterclass #18
+                            </label>
+                            <label class="descricao-video">
+                                Rocketseat
+                            </label>
+                            <label class="descricao-video">
+                                27 mil visualizações - há 5 meses
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/eKi3UlBZEXI/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBl6AXR1eFATgi3evw0Gp_Zlq_gcA"
+                        width="319" height="179"> <!-- https://www.youtube.com/watch?v=eKi3UlBZEXI -->
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14Ghk9opsfahCB1JWkzYOR2twrxmlz1EUdmkSTw=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                CRIANDO UMA MINI LOJA VIRTUAL COM HTML & CSS "PURO" (TUTORIAL)
+                            </label>
+                            <label class="descricao-video">
+                                Danki Code
+                            </label>
+                            <label class="descricao-video">
+                                10 mil visualizações - há 5 meses
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/8rkuukKA8a4/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCHzPV_hY0gu_aqjRDBAP0qnUBsmg"
+                        width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GhgeYyRM3IVJg19ULx41nK1fiZmcseIOGZf7Q=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                O tamanho das imagens importa para um site? - @Curso em Vídeo HTML5 e CSS3
+                            </label>
+                            <label class="descricao-video">
+                                Curso em Vídeo
+                            </label>
+                            <label class="descricao-video">
+                                9 mil visualizações - há 1 semana
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
+
             <div class="linha"></div>
-            <div id="videos-musica">
+            <div id="secao-de-videos">
                 <h1> Principais notícias </h1>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/l-68jpgVbuk/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAXe_A5NI4SIVp7EF3YT6EAWJenxg"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/D56Liix9HnY/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCEQ4vigmbj0QDRQB0anuhjkyNjTw"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a/AATXAJyOJDnjRP5zIzMVa5BOacS_6Qu1qV5ThFUo_f_ixg=s88-c-k-c0x00ffffff-no-rj"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Joe Biden cuidará da covid-19 antes de reabrir economia
+                            </label>
+                            <label class="descricao-video">
+                                Band Jornalismo
+                            </label>
+                            <label class="descricao-video">
+                                1,1 mil visualizações - há 15 horas
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/qF-BZqCFrK4/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLC11peEZ-l0Ub6P6rSBo3z63LogPA"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/qF-BZqCFrK4/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLC11peEZ-l0Ub6P6rSBo3z63LogPA"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwnhEAmoQ19gm-chx4h-s4wck9Izf4TNOpbRh0q002Q=s48-c-k-c0xffffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Dimas Covas fala sobre retomada de testes da Coronavac
+                            </label>
+                            <label class="descricao-video">
+                                Jovem Pan News
+                            </label>
+                            <label class="descricao-video">
+                                27 mil visualizações - há 5 dias
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/0xyCfF4A2iw/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBeoiMDJknz1gXKQH3T3OwxbaOV4Q"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/Nmb1AGOVV-A/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBw88qTrk57dOsttaodnNOKwR3GMQ"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a/AATXAJyOJDnjRP5zIzMVa5BOacS_6Qu1qV5ThFUo_f_ixg=s88-c-k-c0x00ffffff-no-rj"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                TSE vai testar voto on-line em Curitiba
+                            </label>
+                            <label class="descricao-video">
+                                Band Jornalismo
+                            </label>
+                            <label class="descricao-video">
+                                1,2 mil visualizações - há 2 semanas
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/GMiF-eCVqzI/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDvxOgY9gROWG4Br5iW4dnoXMt6Gg"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/bwxerJecQnU/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBSBO4M2u3nARrdHLErZzW3Y2tBKQ"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GhZPfliq8vOnNqn73O7WkP6NVjLfCOCn1H0Xw=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Previsão do Tempo – 16/11/2020
+                            </label>
+                            <label class="descricao-video">
+                                Jornal da Gazeta
+                            </label>
+                            <label class="descricao-video">
+                                4,4 mil visualizações - há 14 horas
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="linha"></div>
-            <div id="videos-musica">
+            <div id="secao-de-videos">
                 <h1> Músicas mais tocadas </h1>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/f6Wo_o-3iF0/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBmX6VKHdNDrui3hgiZLpRenxWg-w"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/f6Wo_o-3iF0/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBmX6VKHdNDrui3hgiZLpRenxWg-w"
                         width="319" height="179"> <!-- https://www.youtube.com/watch?v=f6Wo_o-3iF0 -->
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GiLHj3ZMdHlP0stPXdL7f3RyI0NMyi45dmgiA=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Henrique e Juliano - Recaídas - 60ª Festa do Peão de Barretos - Ao vivo
+                            </label>
+                            <label class="descricao-video">
+                                Henrique e Juliano
+                            </label>
+                            <label class="descricao-video">
+                                82 mi de visualizações - há 5 anos
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/NOXQvXDCSOk/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAD_Xa6cGjGlPjkjYbcUgs1r-fCfQ"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/NOXQvXDCSOk/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAD_Xa6cGjGlPjkjYbcUgs1r-fCfQ"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwnijEtRyusghvyN8e3CnrhjAViHuCfqZXlLbPqbdzg=s48-c-k-c0xffffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Na hora de amar - Violão (Gusttavo Lima)
+                            </label>
+                            <label class="descricao-video">
+                                reinaldomeirelles
+                            </label>
+                            <label class="descricao-video">
+                                354 mil visualizações - há 5 anos
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/qxU-Kfql0QQ/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDytSdTmritrHx1UhwmHcjxvRYMaA"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/QxamVP2dJCA/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDsb4fHBKlmR6D6suX9sJYGv0utiA"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GiAp4fgx1AyKjYXky7CdLcRFA_KLr-frb7e9w=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Pixote - Nem de Graça / Saudade Arregaça (Ao Vivo) - DVD Fã de Carteirinha
+                            </label>
+                            <label class="descricao-video">
+                                Grupo Pixote
+                            </label>
+                            <label class="descricao-video">
+                                221 mi de visualizações - há 1 ano
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/ZujP5qjviLc/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAbP1_4zzXi34-IMYcUEcN-anC0Cw"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/ZujP5qjviLc/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAbP1_4zzXi34-IMYcUEcN-anC0Cw"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GgtW956-Wn5Cx94IqOV68NMpEkc2SFI20_uWg=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Gusttavo Lima - De Menina Pra Mulher (O Embaixador The Legacy)
+                            </label>
+                            <label class="descricao-video">
+                                Gusttavo Lima Oficial
+                            </label>
+                            <label class="descricao-video">
+                                86 mi de visualizações - há 1 mês
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/PnAMEe0GGG8/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCbUq-0Nj8ssNz-Iqe73NI6lOOZSw"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/mD0f_OqDTno/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCO3Sfg2Dyqs1J48OXyE_uZ8WMvWw"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GhS0FO42uUk_K7ZoMbIjEtj5kQYKyPf3lw2aQ=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Maiara e Maraisa & Marília Mendonça - Paixão Goiana (Official Music Video)
+                            </label>
+                            <label class="descricao-video">
+                                Maiara e Maraisa
+                            </label>
+                            <label class="descricao-video">
+                                6,1 mi de visualizações - há 3 meses
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/NOXQvXDCSOk/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAD_Xa6cGjGlPjkjYbcUgs1r-fCfQ"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/FmcNr5Z3wWQ/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLApKXTmCMHJuFedMQRWVCDrTKO_kQ"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GgtW956-Wn5Cx94IqOV68NMpEkc2SFI20_uWg=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Gusttavo Lima - Quem Traiu Levou - DVD O Embaixador In Cariri (Ao Vivo)
+                            </label>
+                            <label class="descricao-video">
+                                Gusttavo Lima Oficial
+                            </label>
+                            <label class="descricao-video">
+                                99 mi de visualizações - há 1 ano
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/qxU-Kfql0QQ/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDytSdTmritrHx1UhwmHcjxvRYMaA"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/CGOEEg1Z1_g/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBJlUzJLjFrMaloaBWe0LfvURKEnw"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GiLHj3ZMdHlP0stPXdL7f3RyI0NMyi45dmgiA=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Henrique e Juliano - ONLINE - DVD Ao Vivo No Ibirapuera
+                            </label>
+                            <label class="descricao-video">
+                                Henrique e Juliano
+                            </label>
+                            <label class="descricao-video">
+                                30 mi de visualizações - há 7 meses
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="video">
-                    <img class="videos" src="https://i.ytimg.com/vi/ZujP5qjviLc/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAbP1_4zzXi34-IMYcUEcN-anC0Cw"
+                    <img class="videos"
+                        src="https://i.ytimg.com/vi/FvH037H7uPY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDrk0-PlSyDNbn-uK12DWOYES07KA"
                         width="319" height="179">
+                    <div class="conteudo-descricao">
+                        <img src="https://yt3.ggpht.com/a-/AOh14GiLHj3ZMdHlP0stPXdL7f3RyI0NMyi45dmgiA=s68-c-k-c0x00ffffff-no-rj-mo"
+                            width="34px">
+                        <div class="textos-descricao">
+                            <label class="titulo-video">
+                                Henrique e Juliano - EU E A SAUDADE - DVD Menos é Mais - IG
+                            </label>
+                            <label class="descricao-video">
+                                Henrique e Juliano
+                            </label>
+                            <label class="descricao-video">
+                                14 mi de visualizações - há 2 anos
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
-        </div>
+            </div>
     </section>
 </body>
 
