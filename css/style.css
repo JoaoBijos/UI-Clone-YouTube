@@ -22,6 +22,7 @@ a{
     text-decoration: none;
 }
 
+
 /* Linha de separação dos campos no site */
 
 .linha{
@@ -136,8 +137,7 @@ a{
     font: 14px Roboto, arial, sans-serif;
     display: flex;
     flex-direction: row;
-    padding-top: 16px;
-    padding-left: 24px;
+    padding-left: 20px;
 }
 
 
@@ -187,7 +187,7 @@ a{
 }
 
 .linha2{
-    width: 240px;
+    width: 100%;
     height: 1px;
     background: #474747;
 }
@@ -198,10 +198,10 @@ a{
     padding-left: 24px;
 }
 
-.itens-lateral img{
-   
+.itens-politicas-lateral{
+    color:#aaa;
+    margin: none;
 }
-
 
 .itens-lateral:hover{
     background-color: #383838;
@@ -210,6 +210,7 @@ a{
 .img-canais{
     height: 24px;
     border-radius: 50%;
+    margin-top: 10px;
 }
 
 .botoes-canto-esquerdo{
